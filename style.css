@@ -16,6 +16,7 @@ body {
     flex-direction: row;
     justify-content: space-between;
     border-bottom: solid black 1px;
+    flex-wrap: ;
 }
 
 .navbar_s1 {
@@ -97,7 +98,7 @@ body {
 
 .course_card img {
     width: 300px;
-    height: 200px;
+    height: 250px;
     
 }
 
@@ -127,8 +128,6 @@ body {
     gap: 10px;
 
 }
-
-
 .popular_card {
     border: solid #892DE1 2px;
     border-radius: 10px;
@@ -141,13 +140,13 @@ body {
 
 }
 
-.popular_card h3,
-p {
+.popular_card h3, p {
     margin-top: 5px;
 }
 
 .popular_card img {
-    width: 250px;
+    width: 350px;
+    height: 250px;
     align-items: center;
 }
 
