@@ -1,7 +1,6 @@
 * {
     margin: 0%;
     padding: 0%;
-    ;
 }
 
 body {
@@ -16,7 +15,7 @@ body {
     flex-direction: row;
     justify-content: space-between;
     border-bottom: solid black 1px;
-    flex-wrap: ;
+    
 }
 
 .navbar_s1 {
