@@ -1,6 +1,7 @@
 * {
     margin: 0%;
     padding: 0%;
+    ;
 }
 
 body {
@@ -15,7 +16,6 @@ body {
     flex-direction: row;
     justify-content: space-between;
     border-bottom: solid black 1px;
-    
 }
 
 .navbar_s1 {
@@ -120,13 +120,14 @@ body {
 
 .popular_container {
     display: flex;
-    
     flex-wrap: wrap;
     flex-grow: 1;
     padding: 10px;
     gap: 10px;
 
 }
+
+
 .popular_card {
     border: solid #892DE1 2px;
     border-radius: 10px;
@@ -144,9 +145,8 @@ body {
 }
 
 .popular_card img {
-    width: 350px;
-    height: 250px;
-    align-items: center;
+    width: 280px;
+    height: 200px;
 }
 
 
