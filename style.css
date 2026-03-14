@@ -13,24 +13,22 @@ body {
 .navbar {
     padding: 10px;
     display: flex;
-    flex-direction: row;
+    align-items: center;
     justify-content: space-between;
     border-bottom: solid black 1px;
 }
 
 .navbar_s1 {
     color: #892DE1;
+    margin-right: 4px;
 }
 
 .navbar_s2 {
-    padding: 10px;
+    padding: 5px 12px;
     border: solid black 1px;
     border-radius: 30px;
     width: 60%;
-    justify-content: flex-start;
     display: flex;
-    flex-direction: row;
-    align-items: start;
     gap: 10px;
 }
 
@@ -47,10 +45,24 @@ body {
 .navbar_s3 {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: space-around;
     gap: 20px;
     padding: 10px;
+
+}
+
+@media screen and (max-width:900px) {
+
+    .navbar_s1 h1 {
+        font-size: 22px;
+    }
+    .navbar_s2 {
+        width: 40%;
+    }
+    .navbar_s3 p {
+        font-size: 14px;
+    }
 
 }
 
@@ -90,23 +102,30 @@ body {
 .course_card {
     margin-top: 10px;
     display: flex;
-    flex-grow: 1;
     flex-wrap: wrap;
-    justify-content:space-between;
-    align-items: center;
+   justify-content: flex-start;
+    align-items: stretch;
     gap: 30px;
-    width: 100%;
     
 
+}
+.course_card div{
+    align-items: center;
+    width:23%;
 
 }
-
 .course_card img {
-    width: 300px;
-    height: 250px;
+      width:100%;
+    height: 200px;;
 
 }
+@media screen and (max-width:900px){
 
+    .course_card div{
+        width:45%;   /* 2 cards per row */
+    }
+
+}
 
 
 .topics_container {
@@ -125,41 +144,43 @@ body {
 
 }
 
-.popular{
-    margin: auto;
-
-}
 .popular_container {
     display: flex;
     flex-wrap: wrap;
-    flex-basis: 25%;
     padding: 10px;
-    gap: 80px;
-    flex-grow: 1;
-    justify-content: space-around;
+    gap: 20px;
+    justify-content: space-between;
 }
 
 .popular_card {
     border: solid #892DE1 2px;
     border-radius: 10px;
     padding: 10px;
-    width: fit-content;
+    width: 23%;/* 4 cards per row */
     display: flex;
     flex-direction: column;
-
-
-}
-
-.popular_card h3,
-.popular_card p {
-    margin-top: 5px;
 }
 
 .popular_card img {
-    width: 280px;
-    height: 200px;
+    width: 100%;
+    height: auto;
 }
 
+@media screen and (max-width: 900px) {
+
+    .popular_card {
+        width: 45%; /* 2 card per row */
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+
+    .popular_card {
+        width: 100%; /* 1 card per row */
+    }
+
+}
 
 /* footer section  */
 
