@@ -12,7 +12,6 @@ body {
 
 .navbar {
     padding: 10px;
-    ;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -28,6 +27,7 @@ body {
     border: solid black 1px;
     border-radius: 30px;
     width: 60%;
+    justify-content: flex-start;
     display: flex;
     flex-direction: row;
     align-items: start;
@@ -56,6 +56,8 @@ body {
 .category {
     display: flex;
     padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     border-bottom: solid black 1px;
 
@@ -79,10 +81,8 @@ body {
     display: block;
 
 }
-
 .recommendations {
     padding: 10px;
-
 }
 
 .course_card {
@@ -91,12 +91,17 @@ body {
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
+    
+    
 }
 
 .course_card img {
     width: 300px;
     height: 200px;
+    
 }
+
+
 
 .topics_container {
     padding: 10px;
@@ -104,11 +109,7 @@ body {
     flex-wrap: wrap;
     margin-top: 10px;
     gap: 10px;
-
 }
-
-
-
 .topics_container p {
     border: solid black 2px;
     flex-basis: 23%;
@@ -119,7 +120,7 @@ body {
 
 .popular_container {
     display: flex;
-    justify-content: space-around;
+    
     flex-wrap: wrap;
     flex-grow: 1;
     padding: 10px;
@@ -132,7 +133,7 @@ body {
     border: solid #892DE1 2px;
     border-radius: 10px;
     padding: 10px;
-    width: 300px;
+    width: fit-content;
     height: 250x;
     display: flex;
     flex-direction: column;
@@ -148,9 +149,10 @@ p {
 .popular_card img {
     width: 250px;
     align-items: center;
-
-
 }
+
+
+/* footer section  */
 
 .footer {
     margin: 10px;
