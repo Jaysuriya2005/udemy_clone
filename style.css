@@ -122,7 +122,7 @@ body {
 @media screen and (max-width:900px){
 
     .course_card div{
-        width:45%;   /* 2 cards per row */
+        width:45%;   /* 2 cards per row ,took idea from ai for responsiveness*/
     }
 
 }
@@ -156,7 +156,7 @@ body {
     border: solid #892DE1 2px;
     border-radius: 10px;
     padding: 10px;
-    width: 23%;/* 4 cards per row */
+    width: 23%;       
     display: flex;
     flex-direction: column;
 }
@@ -169,20 +169,18 @@ body {
 @media screen and (max-width: 900px) {
 
     .popular_card {
-        width: 45%; /* 2 card per row */
+        width: 45%; /* 2 card per row ,took idea from ai for responsiveness*/
     }
-
 }
 
 @media screen and (max-width: 500px) {
 
     .popular_card {
-        width: 100%; /* 1 card per row */
+        width: 100%; /* 1 card per row ,took idea from ai for responsiveness*/
     }
-
 }
 
-/* footer section  */
+
 
 .footer {
     margin: 10px;
