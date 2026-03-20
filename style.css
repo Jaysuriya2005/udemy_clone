@@ -16,6 +16,11 @@ body {
     align-items: center;
     justify-content: space-between;
     border-bottom: solid black 1px;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 1;
+
 }
 
 .navbar_s1 {
@@ -30,11 +35,13 @@ body {
     width: 60%;
     display: flex;
     gap: 10px;
+
 }
 
 .navbar_s2 input {
     border: none;
     width: 100%;
+    background-color: transparent;
 
 }
 
@@ -51,15 +58,33 @@ body {
     padding: 10px;
 
 }
-
+.mylearning{
+    position: relative;
+    cursor: pointer;
+}
+.mylearning__popup  {
+    position: absolute;
+    background-color: white;
+    border: solid black 1px;
+    width: 100px;
+    padding: 10px;
+    top: 150%;
+    display: none;
+    
+}
+.mylearning:hover .mylearning__popup{
+    display: block;
+}
 @media screen and (max-width:900px) {
 
     .navbar_s1 h1 {
         font-size: 22px;
     }
+
     .navbar_s2 {
         width: 40%;
     }
+
     .navbar_s3 p {
         font-size: 14px;
     }
@@ -92,6 +117,24 @@ body {
     width: 100%;
     height: auto;
     display: block;
+    position: relative;
+
+
+}
+
+.sale_image_offer {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 65%;
+    left: 10%;
+    padding: 4%;
+    width: fit-content;
+    height: 100px;
+    border: solid black 2px;
 
 }
 
@@ -103,26 +146,31 @@ body {
     margin-top: 10px;
     display: flex;
     flex-wrap: wrap;
-   justify-content: flex-start;
+    justify-content: flex-start;
     align-items: stretch;
     gap: 30px;
-    
+
 
 }
-.course_card div{
+
+.course_card div {
     align-items: center;
-    width:23%;
+    width: 23%;
 
 }
+
 .course_card img {
-      width:100%;
-    height: 200px;;
+    width: 100%;
+    height: 200px;
+    ;
 
 }
-@media screen and (max-width:900px){
 
-    .course_card div{
-        width:45%;   /* 2 cards per row ,took idea from ai for responsiveness*/
+@media screen and (max-width:900px) {
+
+    .course_card div {
+        width: 45%;
+        /* 2 cards per row ,took idea from ai for responsiveness*/
     }
 
 }
@@ -156,7 +204,7 @@ body {
     border: solid #892DE1 2px;
     border-radius: 10px;
     padding: 10px;
-    width: 23%;       
+    width: 23%;
     display: flex;
     flex-direction: column;
 }
@@ -169,14 +217,16 @@ body {
 @media screen and (max-width: 900px) {
 
     .popular_card {
-        width: 45%; /* 2 card per row ,took idea from ai for responsiveness*/
+        width: 45%;
+        /* 2 card per row ,took idea from ai for responsiveness*/
     }
 }
 
 @media screen and (max-width: 500px) {
 
     .popular_card {
-        width: 100%; /* 1 card per row ,took idea from ai for responsiveness*/
+        width: 100%;
+        /* 1 card per row ,took idea from ai for responsiveness*/
     }
 }
 
