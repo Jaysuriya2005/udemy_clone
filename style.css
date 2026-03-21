@@ -155,7 +155,12 @@ body {
     opacity: 0;
     animation-fill-mode: forwards;
 }
-
+@media (max-width:600px) {
+    .sale_image_offer{
+        display: none;
+    }
+    
+}
 @keyframes zoom {
     0% {
         transform: scale(0);
